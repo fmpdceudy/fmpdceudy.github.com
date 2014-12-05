@@ -1,0 +1,4 @@
+markdown:   rdiscount
+permalink:  /:year/:month/:title/
+author:     fmpdceudy
+pygments:   true
