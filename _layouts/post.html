@@ -2,24 +2,5 @@
 layout: default
 ---
 
-<section class="post">
-{{ content }}
-</section>
-<section class="meta">
-<span class="author">
-  {{ site.author }}
-</span>
-<span class="time">
-  /
-  <time datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date:"%Y-%m-%d" }}</time>
-</span>
-<br />
-{% if page.categories %}
-<span class="categories">
-  in categories
-  {% for cat in page.categories %}
-  <a href="/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a>&nbsp;
-  {% endfor %}
-</span>
-{% endif %}
-</section>
+{% include page.html %}
+{% include meta.html %}
