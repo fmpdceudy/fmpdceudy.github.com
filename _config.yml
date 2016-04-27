@@ -1,4 +1,6 @@
-markdown:   rdiscount
+markdown:   kramdown
+kramdown:
+    input: GFM
 permalink:  /:year/:month/:title/
 author:     fmpdceudy
 pygments:   true
